@@ -10,7 +10,7 @@
   4. git init//初始化新本地库，初始化后，在当前目录下会出现一个名为.git 的文件夹
   5. git add "文件名" //将文件添加到Git 暂存区
   6. git commit -m "****"//提交暂存区内容到版本库(本地库)中并添加注释
-  7. git remote add origin [自己的ssh地址]//关联本地库与远程库
+  7. git remote add origin git@gitee.com:****/****.git//关联本地库与远程库
   8. git pull --rebase origin master//合并
   9. git push -u origin master //第一次推送   
      git push origin master 
@@ -40,8 +40,8 @@
   ```c
   1. rm -rf .git/
   2. git init
-  3. git remote add origin [ssh链接]
-  4. git add [文件]
+  3. git remote add origin git@gitee.com:****/****.git
+  4. git add "文件名"
   5. git commit -m “Commit message”
   6. git push -f origin master
   ```
@@ -77,7 +77,7 @@
        git add README.md
        git add .
        git commit -m "first commit"
-       git remote add origin [ssh连接]
+       git remote add origin git@gitee.com:****/****.git
        git push --force origin master
      ```
 
