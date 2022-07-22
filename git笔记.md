@@ -24,8 +24,8 @@
 
   ```c
   1.git add -A //保存所有的修改
-  git add . //保存新的添加和修改，但是不包括删除
-  git add -u //保存修改和删除，但是不包括新建文件
+    git add . //保存新的添加和修改，但是不包括删除
+    git add -u //保存修改和删除，但是不包括新建文件 
   2.git commit -m "***"    //提交暂存区内容到版本库(本地库)中并添加注释
   3.git push origin master //推送本地仓库的内容到origin这个远程仓库的master分支
     git push -f origin master//强制推送
@@ -57,5 +57,30 @@
   //如果git rebase --continue | --skip | --abort还是不行
   3.git reset --hard HEAD~1 //git reset --hard将丢弃您的工作，只有在您知道自己在做什么时才使用它！
   ```
+
+  ------
+  
+- ## 出现[rejected\] master -> master](https://stackoverflow.com/questions/28429819/rejected-master-master-fetch-first)
+
+  ​	必须获取、合并变更集，然后才能再次推送。如果你不这样做（或者更糟糕的是，如果你使用`--force`选项强制它），你可能会弄乱提交历史。
+
+  1. 如果要解决，请先获取（然后合并）。
+
+  2. 如果您想破解，请使用该`--force`选项。
+
+     ```C
+     //第一种，先备份好本地文件
+     1.git add -A
+       git pull --rebase origin master
+     //第二种
+     2.git init
+       git add README.md
+       git add .
+       git commit -m "first commit"
+       git remote add origin [ssh连接]
+       git push --force origin master
+     ```
+
+     
 
   
