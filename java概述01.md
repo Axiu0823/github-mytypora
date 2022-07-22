@@ -57,7 +57,7 @@
 
 ## Java语言的特点：跨平台性
 
-![202207220105246](images/202207220105246.png)
+![202207220105246](https://picgo-1305004037.cos.ap-guangzhou.myqcloud.com/images/202207221024439.png)
 
 ​		 说明：因为有了JVM，同一个Java程序在三个不同的操作系统中都可以执行，这样Java程序就有了跨平台性。
 
@@ -67,7 +67,7 @@
 2. 对于不同平台有不同的虚拟机。
 3. Java虚拟机屏蔽了底层运行平台的差别，实现了“==一次编译，到处运行==”
 
-​	![202207220105283](images/202207220105283.png)
+​	![202207220105283](https://picgo-1305004037.cos.ap-guangzhou.myqcloud.com/images/202207221025297.png)
 
 ------
 
@@ -145,15 +145,15 @@
 
 ​		首先先安装Package Control，第一次安装是没有的，按Shift + Ctrl + P 或者点击工具栏中的Tools再点击Command Palette呼出命令窗口，
 
-​	![202207220105144](images/202207220105144.png)
+​	![202207220105144](https://picgo-1305004037.cos.ap-guangzhou.myqcloud.com/images/202207221025375.png)
 
 ​		然后输入install 在列出的选中选择：Install Package Control即开始安装，安装完后会弹出一个窗口
 
-![202207220105173](images/202207220105173.png)
+![202207220105173](https://picgo-1305004037.cos.ap-guangzhou.myqcloud.com/images/202207221025760.png)
 
 ​		这样就是安装成功了，然后在 Preferences 菜单下可以看到 Package Control 这个选项了
 
-![202207220105206](images/202207220105206.png)
+![202207220105206](https://picgo-1305004037.cos.ap-guangzhou.myqcloud.com/images/202207221025788.png)
 
 ​	点击它然后在弹出来的窗口输入chinese选择ChineseLocalizations 稍等数秒软件自己调整为了中文
 
