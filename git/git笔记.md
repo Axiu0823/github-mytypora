@@ -60,7 +60,7 @@
 
   ------
   
-- ## 出现[rejected\] master -> master](https://stackoverflow.com/questions/28429819/rejected-master-master-fetch-first)
+- ### 出现[rejected\] master -> master](https://stackoverflow.com/questions/28429819/rejected-master-master-fetch-first)
 
   ​	必须获取、合并变更集，然后才能再次推送。如果你不这样做（或者更糟糕的是，如果你使用`--force`选项强制它），你可能会弄乱提交历史。
 
