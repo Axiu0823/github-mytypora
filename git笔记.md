@@ -23,7 +23,9 @@
 - ## 同步操作
 
   ```c
-  1.git add ""   //添加当前目录的文件到暂存区
+  1.git add -A //保存所有的修改
+  git add . //保存新的添加和修改，但是不包括删除
+  git add -u //保存修改和删除，但是不包括新建文件
   2.git commit -m "***"    //提交暂存区内容到版本库(本地库)中并添加注释
   3.git push origin master //推送本地仓库的内容到origin这个远程仓库的master分支
     git push -f origin master//强制推送
