@@ -1,6 +1,8 @@
 <center>Git 实习生的杀手</center>
 
-# Git分支操作
+------
+
+# 四、Git分支操作
 
 ![image-20220723173633710](https://picgo-1305004037.cos.ap-guangzhou.myqcloud.com/images/202207231736863.png)
 

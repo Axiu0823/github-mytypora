@@ -1,0 +1,80 @@
+<center>Git 实习生的杀手</center>
+
+------
+
+# 五、Git团队协作机制
+
+## 5.1 团队内协作
+
+![image-20220724010718129](https://picgo-1305004037.cos.ap-guangzhou.myqcloud.com/images/202207240107171.png)
+
+## 5.2 跨团队协作
+
+
+
+![image-20220724011330557](https://picgo-1305004037.cos.ap-guangzhou.myqcloud.com/images/202207240113613.png)
+
+------
+
+# 六、Github操作（Gitee同理）
+
+## 6.1 创建远程库
+
+![image-20220724040724386](https://picgo-1305004037.cos.ap-guangzhou.myqcloud.com/images/202207240407437.png)
+
+![image-20220724041003258](https://picgo-1305004037.cos.ap-guangzhou.myqcloud.com/images/202207240410325.png)
+
+------
+
+## 6.2 远程库操作
+
+### 基础命令表
+
+| 命令名称                       |                                                        |
+| :----------------------------- | ------------------------------------------------------ |
+| git remote -v                  | 查看当前所有远程库地址和别名                           |
+| git remote add 别名 远程库地址 | 连接远程库并创建别名表示                               |
+| git push 别名 本地分支         | 推送本地分支上的内容到远程库上与本地分支同名的分支     |
+| git clone 远程库地址           | 将远程库的内容克隆到本地                               |
+| git pull 别名 远程库分支名     | 讲远程库对于分支最新内容拉下来后与当前本地分支直接合并 |
+
+### 6.2.1 连接远程库并创建别名
+
+基本语法
+
+| git remote -v                  | 查看当前所有远程库地址和别名 |
+| :----------------------------- | ---------------------------- |
+| git remote add 别名 远程库地址 | 连接远程库并创建别名表示     |
+
+```c#
+//查看当前所有远程库地址以及对应别名
+Axiu@LAPTOP-F1M9BDPF MINGW64 /i/Axiu/Desktop/study/note (master)
+$ git remote -v 
+//连接远程库并创建别名表示
+Axiu@LAPTOP-F1M9BDPF MINGW64 /i/Axiu/Desktop/study/note (master)
+$ git remote add github https://github.com/atguiguyueyue/git shTest.git
+//再次查看
+Axiu@LAPTOP-F1M9BDPF MINGW64 /i/Axiu/Desktop/study/note (master)
+$ git remote -v
+github https://github.com/atguiguyueyue/git shTest.git (fetch)
+github https://github.com/atguiguyueyue/git shTest.git (push)
+```
+
+远程库地址是创建好远程库后自动生成的连接，在如图所示的框框中
+
+![image-20220724044137692](https://picgo-1305004037.cos.ap-guangzhou.myqcloud.com/images/202207240441728.png)
+
+------
+
+
+
+### 6.2.2 推送本地分支到远程库
+
+基础语法
+
+git push 别名 分支
+
+```
+
+```
+
