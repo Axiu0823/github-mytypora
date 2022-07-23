@@ -29,6 +29,7 @@
   2.git commit -m "***"    //提交暂存区内容到版本库(本地库)中并添加注释
   3.git push origin master //推送本地仓库的内容到origin这个远程仓库的master分支
     git push -f origin master//强制推送
+  4.git pull --rebase 远程库名 分支名    //将远程仓库同步到本地
   ```
 
 - ------
