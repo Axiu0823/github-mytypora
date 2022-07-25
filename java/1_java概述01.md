@@ -2,13 +2,15 @@
 
 
 
-# 1、什么是程序
+# 一、Java概述
+
+## 1.1 什么是程序
 
 程序：计算机执行某些操作或解决某个问题而编写的一系列==有序指令的集合==
 
 ------
 
-# 2、Java诞生小故事
+## 1.2 Java诞生小故事
 
 创始人是[ 詹姆斯·高斯林](https://zh.wikipedia.org/wiki/詹姆斯·高斯林)
 
@@ -19,7 +21,7 @@
 - 2009年甲骨文公司宣布正式收购sun。2011发布Java7
 - ==Java8 11为长期维护版本，也是公司最常用版本==
 
-# 3、Java技术体系平台
+## 1.3 Java技术体系平台
 
 | Java SE（Java Standard Edition）==标准版==                   |
 | ------------------------------------------------------------ |
@@ -31,7 +33,7 @@
 
 ------
 
-# 4、Java重要特点
+## 1.4 Java重要特点
 
 1. Java语言是面向对象的（oop）
 
@@ -53,15 +55,15 @@
 
 ------
 
-# 5、Java的运行机制及过程
+## 1.5 Java的运行机制及过程
 
-## Java语言的特点：跨平台性
+### 1.5.1 Java语言的特点：跨平台性
 
 ![202207220105246](https://picgo-1305004037.cos.ap-guangzhou.myqcloud.com/images/202207221024439.png)
 
 ​		 说明：因为有了JVM，同一个Java程序在三个不同的操作系统中都可以执行，这样Java程序就有了跨平台性。
 
-- # Java核心机制——Java虚拟机【JVM Java virtual machine】
+### 1.5.2 Java核心机制——Java虚拟机【JVM Java virtual machine】
 
 1. JVM是一个虚拟的计算机，具有指令集并使用不同的储存区域。负责执行指令，管理数据、内存、寄存器，包含==JDK中==
 2. 对于不同平台有不同的虚拟机。
@@ -71,9 +73,9 @@
 
 ------
 
-# 6、什么是JDK、JRE
+## 1.6什么是JDK、JRE
 
-## JDK基本介绍
+### 1.6.1 JDK基本介绍
 
 1. JDK的全程（Java Development Kit ==Java开发工具包==）
 
@@ -81,7 +83,7 @@
 
 2. JDK是提供给开发人员使用的，其中包括了Java的开发工具，也包括了JRE。所以安装了JDK就不用再单独安装JRE了。
 
-## JRE的基本介绍
+### 1.6.2 JRE的基本介绍
 
 1. JRE（Java Runtime Environment ==Java运行环境==）
 
@@ -91,7 +93,7 @@
 
    ------
 
-## JDK、JRE、JVM的包含关系
+### 1.6.3JDK、JRE、JVM的包含关系
 
 1. JDK=JRE+开发工具集（例如javac，Java编译工具等）
 2. JRE=JVM+Java SE标准类库（java核心类库）
@@ -99,9 +101,9 @@
 
 ------
 
-# 7、安装JDK和配置环境变量
+## 1.7安装JDK和配置环境变量
 
-## 安装JDK
+### 1.7.1安装JDK
 
 - ### 我不傻就不写安装步骤了，注意事项：
 
@@ -111,9 +113,7 @@
 
 ------
 
-
-
-## ==配置环境变量==
+### ==1.7.2 配置环境变量==
 
 1. ## 在环境变量中增加JAVA_HOME环境变量，指向你按照的jdk目录，例如：H:\Program\Java\jdk8
 
@@ -125,41 +125,41 @@
    
    ------
 
-# 8、工具选择
+## 1.8 工具选择
 
-## 如何选择开发工具
+### 1.8.1 如何选择开发工具
 
 ​	我们先使用简单的文本编辑器[sublime](https://www.sublimetext.com/download)，到对了Java有一定了解后，再使用智障的idea开发工具
 
-## 为什么呢
+### 1.8.2 为什么呢
 
 方便更深刻理解Java技术，培养代码感，培养手感。【面试时往往需要手写代码】
 
 ------
 
-## sublime4的汉化与激活
+### 1.8.3 sublime4的汉化与激活
 
-### 	安装这么简单的事就不写了，直接上汉化
+#### 	安装这么简单的事就不写了，直接上汉化
 
-### 	1.汉化
-
-​		首先先安装Package Control，第一次安装是没有的，按Shift + Ctrl + P 或者点击工具栏中的Tools再点击Command Palette呼出命令窗口，
+首先先安装Package Control，第一次安装是没有的，按Shift + Ctrl + P 或者点击工具栏中的Tools再点击Command Palette呼出命令窗口，
 
 ​	![202207220105144](https://picgo-1305004037.cos.ap-guangzhou.myqcloud.com/images/202207221025375.png)
 
-​		然后输入install 在列出的选中选择：Install Package Control即开始安装，安装完后会弹出一个窗口
+然后输入install 在列出的选中选择：Install Package Control即开始安装，安装完后会弹出一个窗口
 
 ![202207220105173](https://picgo-1305004037.cos.ap-guangzhou.myqcloud.com/images/202207221025760.png)
 
-​		这样就是安装成功了，然后在 Preferences 菜单下可以看到 Package Control 这个选项了
+这样就是安装成功了，然后在 Preferences 菜单下可以看到 Package Control 这个选项了
 
 ![202207220105206](https://picgo-1305004037.cos.ap-guangzhou.myqcloud.com/images/202207221025788.png)
 
-​	点击它然后在弹出来的窗口输入chinese选择ChineseLocalizations 稍等数秒软件自己调整为了中文
+点击它然后在弹出来的窗口输入install package选择Package Control:install Package 稍等数弹出命令框，然后输入ChineseLocalizations选择第一个。
+
+![image-20220725170342144](https://picgo-1305004037.cos.ap-guangzhou.myqcloud.com/images/202207251703207.png)
 
 ------
 
-### 	2.激活
+#### 激活
 
 1）在软件的安装目录找到 sublime_text.exe 文件。
 
@@ -178,3 +178,10 @@
 
 4）先粘贴要搜索的字节，然后替换！最后保存并替换旧的 sublime_text.exe 文件即可！（最好保存一下原文件）
 
+------
+
+#### 增加GBK编码
+
+在Package Control:install Package弹出的命令框中输入convertToUTF8进行搜索安装，然后点击File，找到如下图
+
+![image-20220725170759127](https://picgo-1305004037.cos.ap-guangzhou.myqcloud.com/images/202207251707200.png)
