@@ -403,7 +403,7 @@ int main() {
 
   - 可以注释一行也可以注释多行
 
-## 1.7 条件语句
+## 1.7 条件语句（简略）
 
 ### 1.7.1 选择语句
 
@@ -414,13 +414,13 @@ int main() {
 ```c
 if（判断语句）{
 
-	(代码语句);
+	代码语句;
 
 }
 
 else{
 
-	(代码语句);
+	代码语句;
 
 }
 ```
@@ -446,4 +446,108 @@ int main(){
 ```
 
 ### 1.7.2循环语句
+
+<img src="https://picgo-1305004037.cos.ap-guangzhou.myqcloud.com/images/202208051652927.png" alt="image-20220805165208827" style="zoom:67%;" />
+
+#### 基本语法
+
+```c
+while(判断语句){
+    代码语句;
+}
+```
+
+#### 范例
+
+```c
+#include <stdio.h>
+int main() {
+    printf("坚持努力学习考研一定上岸\n");
+    int time = 0;
+    while (time <= 482) {
+        time++;
+        printf("要放弃吗？离考研还有%d天\n", 482-time);
+    }
+}
+```
+
+## 1.8 函数
+
+### 1.8.1 介绍
+
+函数，英文为function，有功能的意思，可以将函数理解为是一个实现功能的模块或模组。
+
+#### 1.8.2 范例
+
+```c
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+/*
+int main() {
+	int num1 = 0;
+	int num2 = 0;
+	int sum = 0;
+	printf("输入两个操作数:>");
+	scanf("%d %d", &num1, &num2);
+	sum = num1 + num2;
+	printf("sum = %d\n", sum);
+	return 0;
+}
+*/
+//以上代码用函数形式写为：
+int Add(int x, int y) { // x 和 y 分别对应num1和num2，因为num1和num2都是int，所以x和y需要用int定义
+    int z = x + y;	
+    return z;
+}
+int main() {
+    int num1 = 0;
+    int num2 = 0;
+    printf("请输入需要求和的两个数：");
+    scanf("%d %d", &num1, &num2);
+    int sum = Add(num1, num2);
+    printf("合为:%d", sum);
+    return 0;
+}
+```
+
+在上面代码中，函数Add则是实现了一个加法的功能，在写中型或者大型项目时需要重复用到某种功能时，便可以像这样跳出mian函数单独写一个函数实现功能。意义是简化代码，减少代码的重复率，代码复用，提高效率。
+
+## 1.9 数组
+
+### 1.9.1 数组的定义
+
+数组就是计算机在内存中开辟一块空间放入一个或多个元素并且将这片空间命名
+
+```c
+int arr1[10] = {1,2,3,4,5,6,7,8,9,10}; //定义了一个整型数组，最多放10个元素
+char arr2[5] = {'I','L','Y'}; //不完全初始化，剩下的默认为零
+```
+
+<img src="https://picgo-1305004037.cos.ap-guangzhou.myqcloud.com/images/202208051735704.png" alt="image-20220805173541586" style="zoom:67%;" />
+
+### 1.9.2 数组的下标
+
+**C语言规定：数组的每个元素都有一个下，下标是从0开始的。数组需要通过下标来访问**
+
+例如：
+
+| int arr[10] | 0    | 0    | 0    | 0    | 0    | 0    | 0    | 0    | 0    | 0    |
+| ----------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| 下标        | 0    | 1    | 2    | 3    | 4    | 5    | 6    | 7    | 8    | 9    |
+
+### 1.9.3 数组的使用,
+
+```c
+#include <stdio.h>
+int main(){
+    int arr[10] = {1,2,3,4,5,6,7,8,9,10};  //这里i指的是数组的能放几个元素
+    int i = 0;
+    while(i<10){
+        printf("%d\n",arr[i]); //在这里i指的是数组的下标
+        i++;
+    }
+    printf("数组内的内容已全部打印");
+    return 0;
+}
+```
 
